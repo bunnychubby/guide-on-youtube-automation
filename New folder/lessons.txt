@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YTA Lessons</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">YTA Guide</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <button id="lang-toggle">🇬🇧 EN</button>
+    </nav>
+  </header>
+
+  <!-- AdSense Placeholder -->
+  <div class="ads-box">[AdSense Ad – Top Lessons]</div>
+
+  <section class="content">
+    <h2 data-en="YouTube Automation Lessons" data-tl="Mga Aralin sa YouTube Automation">
+      YouTube Automation Lessons
+    </h2>
+
+    <div class="accordion">
+      <button class="accordion-btn" data-en="Lesson 1: Introduction to YouTube Automation" data-tl="Aralin 1: Panimula sa YouTube Automation">Lesson 1: Introduction to YouTube Automation</button>
+      <div class="panel">
+        <p data-en="This lesson introduces YouTube Automation, what it means, and why it's one of the fastest-growing online business models..." 
+           data-tl="Ang araling ito ay nagpapakilala sa YouTube Automation, kung ano ito, at bakit ito isa sa pinakamabilis lumago na online na negosyo...">
+           This lesson introduces YouTube Automation, what it means, and why it's one of the fastest-growing online business models...
+        </p>
+      </div>
+
+      <button class="accordion-btn" data-en="Lesson 2: Tools & Setup" data-tl="Aralin 2: Mga Tools at Setup">Lesson 2: Tools & Setup</button>
+      <div class="panel">
+        <p data-en="Learn about the basic tools you need: a good PC, editing software, microphone, and how to set up your YouTube channel properly..."
+           data-tl="Alamin ang mga pangunahing gamit na kailangan: magandang PC, editing software, mikropono, at paano maayos na i-setup ang iyong YouTube channel...">
+           Learn about the basic tools you need: a good PC, editing software, microphone, and how to set up your YouTube channel properly...
+        </p>
+      </div>
+
+      <button class="accordion-btn" data-en="Lesson 3: Content Research & Niches" data-tl="Aralin 3: Pagsasaliksik ng Nilalaman at Mga Niche">Lesson 3: Content Research & Niches</button>
+      <div class="panel">
+        <p data-en="Discover how to pick profitable niches, use tools like TubeBuddy and VidIQ, and avoid common mistakes beginners make..."
+           data-tl="Alamin kung paano pumili ng mga kumikitang niche, gumamit ng mga tool tulad ng TubeBuddy at VidIQ, at iwasan ang mga karaniwang pagkakamali ng baguhan...">
+           Discover how to pick profitable niches, use tools like TubeBuddy and VidIQ, and avoid common mistakes beginners make...
+        </p>
+      </div>
+
+      <button class="accordion-btn" data-en="Lesson 4: Scriptwriting & Voiceovers" data-tl="Aralin 4: Pagsusulat ng Script at Voiceovers">Lesson 4: Scriptwriting & Voiceovers</button>
+      <div class="panel">
+        <p data-en="Learn how to write engaging scripts, decide between AI or human voiceovers, and match your tone to your audience..."
+           data-tl="Matutunan kung paano gumawa ng nakakaengganyong script, pumili sa pagitan ng AI o totoong boses, at iayon ang tono sa iyong mga manonood...">
+           Learn how to write engaging scripts, decide between AI or human voiceovers, and match your tone to your audience...
+        </p>
+      </div>
+
+      <button class="accordion-btn" data-en="Lesson 5: Video Production & Editing" data-tl="Aralin 5: Produksyon at Pag-edit ng Video">Lesson 5: Video Production & Editing</button>
+      <div class="panel">
+        <p data-en="Explore editing software, stock footage, and how to create professional thumbnails to grab attention..."
+           data-tl="Galugarin ang editing software, stock footage, at kung paano gumawa ng propesyonal na thumbnail para makakuha ng atensyon...">
+           Explore editing software, stock footage, and how to create professional thumbnails to grab attention...
+        </p>
+      </div>
+
+      <button class="accordion-btn" data-en="Lesson 6: Publishing & SEO" data-tl="Aralin 6: Pag-publish at SEO">Lesson 6: Publishing & SEO</button>
+      <div class="panel">
+        <p data-en="Learn how to upload videos, optimize keywords, titles, tags, and increase click-through rate and watch time..."
+           data-tl="Matutunan kung paano i-upload ang mga video, i-optimize ang keywords, pamagat, tags, at pataasin ang click-through rate at watch time...">
+           Learn how to upload videos, optimize keywords, titles, tags, and increase click-through rate and watch time...
+        </p>
+      </div>
+
+      <button class="accordion-btn" data-en="Lesson 7: Scaling to Pro & Monetization" data-tl="Aralin 7: Pag-level up at Pag-momonetize">Lesson 7: Scaling to Pro & Monetization</button>
+      <div class="panel">
+        <p data-en="Outsource tasks, hire a team, explore monetization beyond AdSense such as sponsorships and affiliates..."
+           data-tl="Mag-outsource ng mga gawain, kumuha ng team, at tuklasin ang monetization bukod sa AdSense gaya ng sponsorships at affiliates...">
+           Outsource tasks, hire a team, explore monetization beyond AdSense such as sponsorships and affiliates...
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AdSense Placeholder -->
+  <div class="ads-box">[AdSense Ad – Bottom Lessons]</div>
+
+  <footer>
+    <p>&copy; 2025 YTA Guide. All rights reserved.</p>
+  </footer>
+</body>
+</html>

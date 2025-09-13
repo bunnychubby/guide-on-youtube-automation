@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Automation Guide</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">YTA Guide</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <button id="lang-toggle">🇬🇧 EN</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2 data-en="Guide on YouTube Automation" data-tl="Gabay sa YouTube Automation">
+      Guide on YouTube Automation
+    </h2>
+    <p data-en="Learn how to build, grow, and automate YouTube channels from Beginner to Pro."
+       data-tl="Matutunan kung paano bumuo, magpalago, at mag-automate ng YouTube channel mula Baguhan hanggang Propesyonal.">
+       Learn how to build, grow, and automate YouTube channels from Beginner to Pro.
+    </p>
+    <a href="lessons.html" class="btn">Start Learning</a>
+  </section>
+
+  <!-- AdSense Placeholder -->
+  <div class="ads-box">[AdSense Ad – Top Homepage]</div>
+
+  <footer>
+    <p>&copy; 2025 YTA Guide. All rights reserved.</p>
+  </footer>
+</body>
+</html>
