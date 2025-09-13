@@ -1,12 +1,290 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YouTube Automation Guide</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GUIDE ON YOUTUBE AUTOMATION</title>
+  <meta name="description" content="A complete step-by-step guide on YouTube Automation — from beginner basics to pro-level strategies. Learn how to set up, grow, and scale faceless YouTube channels with automation, outsourcing, and advanced monetization techniques." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- AOS for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    :root{--bg:#0b0b0d;--card:#0f1720;--muted:#c5c7cc;--accent-blue:#0077ff;--accent-red:#b30000}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:#eef0f3;-webkit-font-smoothing:antialiased}
+    a{color:var(--accent-blue)}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:60;background:linear-gradient(90deg,var(--accent-red),#0b0b2b);padding:18px 28px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent-red),var(--accent-blue));display:flex;align-items:center;justify-content:center;font-weight:800;color:white}
+    .title{font-weight:700;font-size:18px}
+    .subtitle{font-size:12px;color:rgba(255,255,255,0.9)}
+    .controls{display:flex;gap:8px;align-items:center}
+    .btn{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.04);color:white;padding:8px 12px;border-radius:8px;cursor:pointer;font-weight:700}
+    .btn.primary{background:white;color:var(--accent-red);border:none}
+    .lang-toggle{display:flex;border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,0.06)}
+    .lang-toggle button{background:transparent;border:none;padding:8px 10px;color:var(--muted);cursor:pointer;font-weight:700}
+    .lang-toggle button.active{background:var(--accent-blue);color:white}
+
+    /* Main */
+    main{max-width:1150px;margin:28px auto;padding:20px}
+    .hero{display:grid;grid-template-columns:1fr 340px;gap:18px;align-items:center}
+    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:28px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
+    .hero h1{margin:0;font-size:32px;line-height:1.05;color:white}
+    .hero p{color:var(--muted);margin-top:10px}
+    .hero .cta{margin-top:18px;display:flex;gap:12px}
+
+    .side-card{background:var(--card);padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+    .side-card h4{margin:0 0 8px;color:var(--accent-blue)}
+    .side-card p{color:var(--muted);font-size:14px}
+
+    /* Sections */
+    section{margin-top:26px}
+    .section-title{color:var(--accent-blue);font-size:20px;margin-bottom:12px}
+
+    /* Accordion */
+    .accordion{border-radius:12px;background:var(--card);margin-bottom:12px;border:1px solid rgba(255,255,255,0.03);overflow:hidden}
+    .accordion .head{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;cursor:pointer}
+    .accordion .head h3{margin:0;color:var(--accent-red);font-size:16px}
+    .accordion .head .meta{color:var(--muted);font-size:13px}
+    .accordion .body{display:none;padding:18px;border-top:1px solid rgba(255,255,255,0.02);color:#e9eef5}
+    .accordion .body p{color:#e9eef5}
+    .accordion .body ul{color:#e9eef5}
+    .ads-box{margin:18px 0;padding:16px;border:2px dashed rgba(0,119,255,0.18);color:var(--muted);text-align:center;border-radius:8px}
+
+    /* Community */
+    .community{display:flex;gap:12px;align-items:center}
+    .discord-card{flex:1;background:linear-gradient(90deg,rgba(88,101,242,0.12),transparent);padding:18px;border-radius:12px;border:1px solid rgba(88,101,242,0.12)}
+    .discord-card h4{margin:0;color:#e6ecff}
+    .discord-card p{color:var(--muted);margin-top:8px}
+
+    /* Footer */
+    footer{margin-top:40px;padding:24px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.03)}
+
+    @media(max-width:980px){.hero{grid-template-columns:1fr} .hero-card{order:1} .side-card{order:2}}
+  </style>
 </head>
 <body>
-  <h1>Welcome to the YouTube Automation Guide</h1>
-  <p>This is a placeholder. The full site code from the canvas should be placed here.</p>
+  <header>
+    <div class="brand">
+      <div class="logo">YT</div>
+      <div>
+        <div class="title" id="site-title">GUIDE ON YOUTUBE AUTOMATION</div>
+        <div class="subtitle" id="site-sub">Step-by-step: Beginner → Pro</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="lang-toggle" role="tablist" aria-label="language switch">
+        <button id="btnEn" class="active">EN</button>
+        <button id="btnTl">TL</button>
+      </div>
+      <button class="btn primary" id="cta-start">Start Learning</button>
+      <button class="btn" id="cta-discord">Join Discord</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-card" data-aos="fade-up">
+        <h1 id="hero-title">Complete Guide to YouTube Automation</h1>
+        <p id="hero-desc">Learn how to build, grow and scale faceless YouTube channels using automation, outsourcing, and proven monetization strategies. Default language is English — switch to Tagalog (TL) anytime.</p>
+        <div class="cta">
+          <button class="btn primary" onclick="openFirst()">Start Learning</button>
+          <a class="btn" href="#community">Join Community</a>
+        </div>
+      </div>
+
+      <aside class="side-card" data-aos="fade-left">
+        <h4>Quick Start</h4>
+        <p>Follow the lessons in order: Beginner → Intermediate → Pro. Each lesson contains step-by-step actionable items and checklists.</p>
+        <div style="height:12px"></div>
+        <div style="display:flex;gap:8px">
+          <a class="btn" href="#acc-1">Beginner</a>
+          <a class="btn" href="#acc-4">Intermediate</a>
+          <a class="btn" href="#acc-6">Pro</a>
+        </div>
+      </aside>
+    </div>
+
+    <div class="ads-box" id="ad-top">AdSense Ad Placeholder (Top)</div>
+
+    <!-- Lessons Accordion -->
+    <section>
+      <div class="section-title">Lessons</div>
+
+      <!-- ACC 1 -->
+      <div class="accordion" id="acc-1" data-aos="fade-up">
+        <div class="head"><h3 id="acc1-title"></h3><div class="meta" id="acc1-meta"></div></div>
+        <div class="body" id="panel-1"><div id="acc1-content"></div></div>
+      </div>
+
+      <!-- ACC 2 -->
+      <div class="accordion" id="acc-2" data-aos="fade-up" data-aos-delay="40">
+        <div class="head"><h3 id="acc2-title"></h3><div class="meta" id="acc2-meta"></div></div>
+        <div class="body" id="panel-2"><div id="acc2-content"></div></div>
+      </div>
+
+      <!-- ACC 3 -->
+      <div class="accordion" id="acc-3" data-aos="fade-up" data-aos-delay="80">
+        <div class="head"><h3 id="acc3-title"></h3><div class="meta" id="acc3-meta"></div></div>
+        <div class="body" id="panel-3"><div id="acc3-content"></div></div>
+      </div>
+
+      <div class="ads-box" id="ad-mid">AdSense Ad Placeholder (Middle)</div>
+
+      <!-- ACC 4 -->
+      <div class="accordion" id="acc-4" data-aos="fade-up" data-aos-delay="120">
+        <div class="head"><h3 id="acc4-title"></h3><div class="meta" id="acc4-meta"></div></div>
+        <div class="body" id="panel-4"><div id="acc4-content"></div></div>
+      </div>
+
+      <!-- ACC 5 -->
+      <div class="accordion" id="acc-5" data-aos="fade-up" data-aos-delay="160">
+        <div class="head"><h3 id="acc5-title"></h3><div class="meta" id="acc5-meta"></div></div>
+        <div class="body" id="panel-5"><div id="acc5-content"></div></div>
+      </div>
+
+      <div class="ads-box" id="ad-bottom">AdSense Ad Placeholder (Bottom)</div>
+
+      <!-- ACC 6 -->
+      <div class="accordion" id="acc-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="head"><h3 id="acc6-title"></h3><div class="meta" id="acc6-meta"></div></div>
+        <div class="body" id="panel-6"><div id="acc6-content"></div></div>
+      </div>
+
+      <!-- ACC 7 -->
+      <div class="accordion" id="acc-7" data-aos="fade-up" data-aos-delay="240">
+        <div class="head"><h3 id="acc7-title"></h3><div class="meta" id="acc7-meta"></div></div>
+        <div class="body" id="panel-7"><div id="acc7-content"></div></div>
+      </div>
+
+    </section>
+
+    <!-- Community -->
+    <section id="community" style="margin-top:28px" data-aos="fade-up">
+      <div class="section-title">Community</div>
+      <div class="community">
+        <div class="discord-card">
+          <h4>Join Our Discord</h4>
+          <p>Connect with other creators, ask questions, share tips, and get feedback. (Invite link is placeholder.)</p>
+          <div style="margin-top:12px"><a class="btn primary" href="#">Join Discord</a></div>
+        </div>
+        <div style="flex:0 0 240px;background:var(--card);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}" data-aos="fade-left">
+          <h4 style="margin:0;color:var(--accent-blue)">Newsletter</h4>
+          <p style="color:var(--muted);font-size:14px;margin-top:8px">Subscribe for tools, templates & updates.</p>
+          <div style="margin-top:12px"><input type="email" placeholder="Your email" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff" /></div>
+          <div style="margin-top:10px"><button class="btn primary">Subscribe</button></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div id="footer-text">© 2025 GUIDE ON YOUTUBE AUTOMATION — All rights reserved</div>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({duration:650, once:true});
+  </script>
+
+  <script>
+    // Content (EN / TL) - using concise but full lesson bodies (you can expand later)
+    const content = {
+      en:{
+        heroTitle: 'Complete Guide to YouTube Automation',
+        heroDesc: 'A step-by-step resource to build, grow and scale faceless YouTube channels using automation, outsourcing and monetization strategies. Default language: English.',
+        lessons:[
+          {title: 'Lesson 1 — What is YouTube Automation?', meta:'Basics & pipeline', content:`<p><strong>Intro</strong></p><p>YouTube automation means running a channel where repetitive tasks are delegated to tools or people so the owner can focus on strategy and scale. Key pipeline elements: research, script, voiceover, edit, thumbnail, upload, optimization.</p><h4>Why it works</h4><p>Automation speeds up iteration, enables multiple channels, and creates predictable outputs when SOPs are in place.</p><h4>Starter checklist</h4><ul><li>Pick niche</li><li>Create 3 test videos</li><li>Document workflow</li><li>Outsource one task</li></ul>`},
+
+          {title:'Lesson 2 — Choosing the Right Niche', meta:'Research & monetization', content:`<p><strong>Intro</strong></p><p>Good niche balances demand and monetization. Finance, tech, business and education usually have higher CPMs. Use TubeBuddy/VidIQ, Google Trends to validate.</p><h4>Validation steps</h4><ol><li>List 50 video ideas</li><li>Analyze top 10 videos</li><li>Test 5 videos and measure retention</li></ol>`},
+
+          {title:'Lesson 3 — Setting Up Your Channel Properly', meta:'Branding & SEO', content:`<p><strong>Intro</strong></p><p>Channel hygiene matters: professional banner, clear About, playlists, channel tags, verified account for custom thumbnails.</p><h4>SEO tips</h4><ul><li>Strong first 1–2 description sentences</li><li>2–3 primary keywords</li><li>Timestamps & chapters</li></ul>`},
+
+          {title:'Lesson 4 — Content Strategy & Uploading', meta:'Formats, scheduling', content:`<p><strong>Intro</strong></p><p>Choose formats (listicles, explainers, narrations). Consistency is key—start 1–2 uploads/week. Hook in first 10 seconds and optimize retention.</p><h4>Testing</h4><p>Experiment with thumbnails, titles and lengths; double down on winners.</p>`},
+
+          {title:'Lesson 5 — Outsourcing & Building a Team', meta:'Hiring & SOPs', content:`<p><strong>Intro</strong></p><p>Hire scriptwriters, voice-over artists, editors, thumbnail designers. Create SOPs: file naming, export presets, description templates, upload checklist.</p><h4>Quality Control</h4><p>Always review content before publishing for copyright, audio levels and brand fit.</p>`},
+
+          {title:'Lesson 6 — Scaling Multiple Channels', meta:'Replication & finances', content:`<p><strong>Intro</strong></p><p>Replicate formats across channels using templates and hire dedicated staff. Track revenue vs costs and maintain KPIs via Sheets or Airtable.</p>`},
+
+          {title:'Lesson 7 — Advanced Monetization', meta:'Diversify income', content:`<p><strong>Intro</strong></p><p>Beyond AdSense: affiliate marketing, sponsorships, digital products, memberships. Use CPM & audience data to pitch sponsors.</p>`}
+        ]
+      },
+
+      tl:{
+        heroTitle: 'Kumpletong Gabay sa YouTube Automation',
+        heroDesc: 'Hakbang-hakbang na resources para makapagsimula at makapagpalago ng faceless YouTube channels gamit ang automation, outsourcing at monetization. Default: English — pindutin TL para Tagalog.',
+        lessons:[
+          {title:'Aralin 1 — Ano ang YouTube Automation?', meta:'Mga batayan at workflow', content:`<p><strong>Panimula</strong></p><p>Ang YouTube automation ay pagpapatakbo ng channel kung saan ang paulit-ulit na gawain ay ipinagkakaloob sa tools o freelancers para ikaw ay makapokus sa strategy at paglago. Mga bahagi: research, script, voiceover, edit, thumbnail, upload.</p><h4>Bakit epektibo</h4><p>Pinapabilis nito ang proseso, nagbibigay-daan sa maraming channel, at nagiging predictable kapag may SOP.</p><h4>Checklist</h4><ul><li>Pili ng niche</li><li>Gumawa ng 3 test videos</li><li>Dokumentuhin ang workflow</li><li>Mag-outsource ng isang gawain</li></ul>`},
+
+          {title:'Aralin 2 — Pagpili ng Tamang Niche', meta:'Pananaliksik at kita', content:`<p><strong>Panimula</strong></p><p>Ang magandang niche ay may demand at may potensyal sa kita. Gumamit ng TubeBuddy, VidIQ at Google Trends para mag-validate.</p><h4>Hakbang sa validation</h4><ol><li>Listahan ng 50 video ideas</li><li>Analisa ng top 10 videos</li><li>Subukan ng 5 videos at sukatin ang retention</li></ol>`},
+
+          {title:'Aralin 3 — Maayos na Pag-setup ng Channel', meta:'Branding at SEO', content:`<p><strong>Panimula</strong></p><p>Mahalaga ang channel hygiene: professional banner, malinaw na About section, playlists, channel tags at verification para sa custom thumbnails.</p><h4>SEO tips</h4><ul><li>Kuwento sa unang pangungusap ng description</li><li>2–3 pangunahing keywords</li><li>Maglagay ng timestamps</li></ul>`},
+
+          {title:'Aralin 4 — Estratehiya sa Content at Pag-upload', meta:'Format at iskedyul', content:`<p><strong>Panimula</strong></p><p>Pumili ng format: listicles, explainers, narrations. Maging consistent—magsimula sa 1–2 uploads kada linggo. Hook sa unang 10 segundo para tumaas ang retention.</p><h4>Testing</h4><p>Mag-eksperimento sa thumbnails at titles at i-scale ang mga matagumpay.</p>`},
+
+          {title:'Aralin 5 — Pag-ooutsource at Pagtatayo ng Team', meta:'Pag-hire at SOPs', content:`<p><strong>Panimula</strong></p><p>Mag-hire ng scriptwriters, voice-over artists, editors at thumbnail designers. Gumawa ng SOP: file naming, export presets, description template at upload checklist.</p><h4>Quality control</h4><p>I-review ang bawat video bago i-publish para sa copyright at audio levels.</p>`},
+
+          {title:'Aralin 6 — Pag-scale ng Maramihang Channels', meta:'Replication at pananalapi', content:`<p><strong>Panimula</strong></p><p>I-replicate ang mga matagumpay na format sa ibang channels gamit ang templates. Sundin ang kita vs gastos at KPI gamit ang Sheets o Airtable.</p>`},
+
+          {title:'Aralin 7 — Advanced Monetization', meta:'Pagkakaiba-iba ng kita', content:`<p><strong>Panimula</strong></p><p>Maliban sa AdSense: affiliate marketing, sponsorships, digital products, memberships. Gamitin ang data para mag-pitch sa sponsors.</p>`}
+        ]
+      }
+    };
+
+    // Render function
+    function render(lang='en'){
+      // hero
+      document.getElementById('hero-title').innerText = content[lang].heroTitle;
+      document.getElementById('hero-desc').innerText = content[lang].heroDesc;
+      // lessons
+      content[lang].lessons.forEach((l,i)=>{
+        const idx = i+1;
+        document.getElementById('acc'+idx+'-title').innerText = l.title;
+        document.getElementById('acc'+idx+'-meta').innerText = l.meta;
+        document.getElementById('acc'+idx+'-content').innerHTML = l.content;
+      });
+      // footer/site text
+      document.getElementById('site-title').innerText = (lang==='en')? 'GUIDE ON YOUTUBE AUTOMATION' : 'GABAY SA YOUTUBE AUTOMATION';
+      document.getElementById('site-sub').innerText = (lang==='en')? 'Step-by-step: Beginner → Pro' : 'Hakbang-hakbang: Baguhan → Propesyonal';
+      document.getElementById('footer-text').innerText = (lang==='en')? '© 2025 GUIDE ON YOUTUBE AUTOMATION — All rights reserved' : '© 2025 GABAY SA YOUTUBE AUTOMATION — Lahat ng karapatan nakalaan';
+    }
+
+    // Init default
+    let lang = 'en';
+    render(lang);
+
+    // Toggle buttons
+    const btnEn = document.getElementById('btnEn');
+    const btnTl = document.getElementById('btnTl');
+    btnEn.addEventListener('click', ()=>{ lang='en'; render(lang); btnEn.classList.add('active'); btnTl.classList.remove('active'); });
+    btnTl.addEventListener('click', ()=>{ lang='tl'; render(lang); btnTl.classList.add('active'); btnEn.classList.remove('active'); });
+
+    // Accordion behavior
+    document.querySelectorAll('.accordion').forEach(acc=>{
+      const head = acc.querySelector('.head');
+      const body = acc.querySelector('.body');
+      head.addEventListener('click', ()=>{
+        const open = body.style.display === 'block';
+        // close all
+        document.querySelectorAll('.accordion .body').forEach(b=>b.style.display='none');
+        if(!open){ body.style.display='block'; setTimeout(()=> body.scrollIntoView({behavior:'smooth', block:'center'}),120); }
+      });
+    });
+
+    // quick open first
+    function openFirst(){ document.querySelector('#acc-1 .body').style.display='block'; document.querySelector('#acc-1').scrollIntoView({behavior:'smooth', block:'center'}); }
+
+    // CTA discord placeholder
+    document.getElementById('cta-discord').addEventListener('click', ()=>{ window.location.hash='#community'; });
+
+  </script>
 </body>
 </html>
